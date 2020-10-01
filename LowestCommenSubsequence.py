@@ -4,7 +4,7 @@ def lcs(X, Y):
     n = len(Y) 
   
     # declaring the array for storing the dp values 
-    L = [[None]*(n - 1) for i in range(m - 1)] 
+    L = [[None]*(n + 1) for i in range(m + 1)] 
   
     for i in range(m + 1): 
         for j in range(n + 1): 
