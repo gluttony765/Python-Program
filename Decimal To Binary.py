@@ -1,18 +1,9 @@
-def decToBinary(n): 
-      
-    # array to store 
-    # binary number 
-    binaryNum = [0] * n; 
-  
-    # counter for binary array 
-    i = 0; 
-    while (n > 0):  
-  
-        # storing remainder  
-        binaryNum[i] = n % 2; 
-        n = int(n / 2); 
-        i += 1;  
-  
-    # printing binary array 
-    for j in range(i - 1, -1, -1): 
-        print(binaryNum[j], end = ""); 
+def dectobinary(n):                        #Made the code into a recursive function
+        if n==1:
+            return(str(1)) 
+        else:
+           return(str(n%2)+dectobinary(n//2))
+# To run the code
+s=dectobinary(293)
+print(s)
+#Output = 101001001
