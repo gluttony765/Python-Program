@@ -4,7 +4,7 @@ def decToBinary(n):
     # binary number 
     binaryNum = [0] * n; 
   
-    # counter for binary array 
+    # counter for binary type array 
     i = 0; 
     while (n > 0):  
   
