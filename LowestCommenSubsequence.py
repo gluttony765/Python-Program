@@ -15,6 +15,6 @@ def lcs(X, Y):
             else: 
                 L[i][j] = max(L[i-1][j], L[i][j-1]) 
     return L[m][n] 
-X = "AGGTAB"
+X = "AGGTAC"
 Y = "GXTXAYB"
 print("Length of LCS is ", lcs(X, Y))
